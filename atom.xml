@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>音乐之声</title>
+  <title>乐音乐</title>
   
   <subtitle>分享是美</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaomo314.github.io/"/>
-  <updated>2019-09-10T06:12:04.194Z</updated>
+  <updated>2019-09-10T06:11:59.862Z</updated>
   <id>https://xiaomo314.github.io/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>天籁天-我的心哪默默无声</title>
-    <link href="https://xiaomo314.github.io/2019/09/10/76224042/"/>
-    <id>https://xiaomo314.github.io/2019/09/10/76224042/</id>
-    <published>2019-09-10T06:12:04.193Z</published>
-    <updated>2019-09-10T06:12:04.194Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;下载链接&quot;&gt;&lt;a href=&quot;#下载链接&quot; class=&quot;headerlink&quot; title=&quot;下载链接&quot;&gt;&lt;/a&gt;下载链接&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.baidu.com/&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="天籁天" scheme="https://xiaomo314.github.io/tags/%E5%A4%A9%E7%B1%81%E5%A4%A9/"/>
-    
-  </entry>
   
   <entry>
     <title>吴青峰-译梦机</title>
