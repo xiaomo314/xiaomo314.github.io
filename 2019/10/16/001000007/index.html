@@ -94,24 +94,6 @@ DINOSAUR - 악동뮤지션 (乐童音乐家)腾讯享有本翻译作品的著作
     </li>
     
     <li class="hide-on-med-and-down">
-        <a href="http://qsg.axhgs.cn/" class="waves-effect waves-light">
-            
-            <i class="fa fa-indent"></i>
-            
-            <span>淘宝大额券</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="https://youhui.pinduoduo.com/?pid=1648853_14625299&fromCustomerMall=1&cpsSign=CM_191029_1648853_14625299_9c856ab67efb7662589563c5a9f21210&duoduo_type=2" class="waves-effect waves-light">
-            
-            <i class="fa fa-camera"></i>
-            
-            <span>拼多多大额券</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
         <a href="/about" class="waves-effect waves-light">
             
             <i class="fa fa-user-circle-o"></i>
@@ -182,24 +164,6 @@ DINOSAUR - 악동뮤지션 (乐童音乐家)腾讯享有本翻译作品的著作
         </li>
         
         <li>
-            <a href="http://qsg.axhgs.cn/" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-indent"></i>
-                
-                淘宝大额券
-            </a>
-        </li>
-        
-        <li>
-            <a href="https://youhui.pinduoduo.com/?pid=1648853_14625299&fromCustomerMall=1&cpsSign=CM_191029_1648853_14625299_9c856ab67efb7662589563c5a9f21210&duoduo_type=2" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-camera"></i>
-                
-                拼多多大额券
-            </a>
-        </li>
-        
-        <li>
             <a href="/about" class="waves-effect waves-light">
                 
                 <i class="fa fa-fw fa-user-circle-o"></i>
@@ -264,20 +228,20 @@ DINOSAUR - 악동뮤지션 (乐童音乐家)腾讯享有本翻译作品的著作
         margin-top: -100px;
         visibility: hidden;
     }
-
+    
     #articleContent :focus {
         outline: none;
     }
-
+    
     .toc-fixed {
         position: fixed;
         top: 64px;
     }
-
+    
     .toc-widget {
         padding-left: 20px;
     }
-
+    
     .toc-widget .toc-title {
         margin: 35px 0 15px 0;
         padding-left: 17px;
@@ -285,39 +249,39 @@ DINOSAUR - 악동뮤지션 (乐童音乐家)腾讯享有本翻译作品的著作
         font-weight: bold;
         line-height: 1.5rem;
     }
-
+    
     .toc-widget ol {
         padding: 0;
         list-style: none;
     }
-
+    
     #toc-content ol {
         padding-left: 10px;
     }
-
+    
     #toc-content ol li {
         padding-left: 10px;
     }
-
+    
     #toc-content .toc-link:hover {
         color: #42b983;
         font-weight: 700;
         text-decoration: underline;
     }
-
+    
     #toc-content .toc-link::before {
         background-color: transparent;
         max-height: 25px;
     }
-
+    
     #toc-content .is-active-link {
         color: #42b983;
     }
-
+    
     #toc-content .is-active-link::before {
         background-color: #42b983;
     }
-
+    
     #floating-toc-btn {
         position: fixed;
         right: 20px;
@@ -326,15 +290,47 @@ DINOSAUR - 악동뮤지션 (乐童音乐家)腾讯享有本翻译作品的著作
         margin-bottom: 0;
         z-index: 998;
     }
-
+    
     #floating-toc-btn .btn-floating {
         width: 48px;
         height: 48px;
     }
-
+    
     #floating-toc-btn .btn-floating i {
         line-height: 48px;
         font-size: 1.4rem;
+    }
+    
+    .toc-title-1 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .toc-widget {
+        border-top: 1px solid rgb(144, 167, 137);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 0px;
+        --darkreader-inline-border-bottom: #323e44;
+    }
+    
+    #toc-aside {
+        padding-left: 30px;
+    }
+    
+    .ad-img {
+        width: 268px;
+        box-shadow: 0px 0px 15px #5d5d5d;
+        transition: all 0.5s;
+    }
+    
+    .ad-img:hover {
+        transform: scale(1.1);
+    }
+    
+    .img-div {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 </style>
 <div class="row">
@@ -723,96 +719,79 @@ DINOSAUR - 악동뮤지션 (乐童音乐家)腾讯享有本翻译作品的著作
 
 
     </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down" style="display: none;">
         <div class="toc-widget">
-            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
+            <div class="toc-title-1"><i class="far "></i>&nbsp;&nbsp; 猜你喜欢
+            </div>
+            <div id="toc-content" class="love" style="padding-left: 10%;">
+                <ul class="toc-list">
+                </ul>
+            </div>
+        </div>
+
+        <div class="toc-widget">
+            <div class="toc-title-1"><i class="far "></i>&nbsp;&nbsp; 每日推荐
+            </div>
+            <div id="toc-content" class="activity" style="padding-left: 10%;">
+                <ul class="toc-list toc-gd">
+                </ul>
+            </div>
+        </div>
+
+        <div class="toc-widget">
+            <div class="toc-title-1"><i class="far "></i>&nbsp;&nbsp; 关注我们
+            </div>
+            <div id="toc-content" class="Img">
+
+            </div>
         </div>
     </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fa fa-list"></i>
-    </a>
 </div>
 
 
 <script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            // headingsOffset: -205,
-            headingSelector: 'h2, h3, h4'
+    $(document).ready(function() {
+
+        var k = "16BD4337FB1D355902E0502AFCBFD4DF"
+        var sort = "order=%5B%22id+DESC%22%5D&"
+
+        $.ajax({
+            url: 'http://api.okayapi.com/?s=App.Table.FreeQuery&model_name=ad&logic=and&where=%5B%5B%22id%22%2C+%22%3E%3D%22%2C+%221%22%5D%5D&' + sort + 'page=1&perpage=6&is_real_total=1&app_key=' + k,
+        }).done(function(rs) {
+            var list = rs.data.list
+            for (var i = 0; i < list.length; i++) {
+                var html = '<li class="toc-list-item" style="list-style: disc;"><a href="' + list[i].url + '" class="toc-link node-name--H4 " target="_blank" >' + list[i].title + '</a></li>'
+                $('.love .toc-list').append(html);
+            }
+            $('#toc-aside').attr('style', '')
         });
 
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
+
+        $.ajax({
+            url: 'http://api.okayapi.com/?service=App.Table.FreeQuery&model_name=day&logic=and&where=%5B%5B%22id%22%2C%22%3E%22%2C0%5D%5D&order=%5B%22RAND%22%5D&page=1&perpage=100&app_key=' + k,
+        }).done(function(rs) {
+            var list = rs.data.list
+            for (var i = 0; i < list.length; i++) {
+                $('.activity .toc-list').append('<li class="toc-list-item" style="list-style: disc;"><a href="' + list[i].url + '" class="toc-link node-name--H4 " target="_blank" >' + list[i].title + '</a></li>');
+            }
+            $('#toc-aside').attr('style', '')
         });
 
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
+        $.ajax({
+            url: 'http://api.okayapi.com/?s=App.Table.FreeQuery&model_name=adimg&logic=and&where=%5B%5B%22id%22%2C+%22%3E%3D%22%2C+%221%22%5D%5D&' + sort + 'page=1&perpage=5&is_real_total=1&app_key=' + k,
+        }).done(function(rs) {
+            var list = rs.data.list
+            for (var i = 0; i < list.length; i++) {
+                var href = list[i].href
+                if (href) {
+                    $('.Img').append(' <div class="img-div"><a href="' + href + '" target="_blank"><img class="ad-img" src="' + list[i].url + '" alt="' + list[i].alt + '"></a></div>');
+                } else {
+                    $('.Img').append(' <div class="img-div"><img class="ad-img" src="' + list[i].url + '" alt="' + list[i].alt + '"></div>');
+                }
 
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
             }
         });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).slideUp(500);
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).slideDown(500);
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
     });
 </script>
     
