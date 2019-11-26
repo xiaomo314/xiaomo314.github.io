@@ -48,7 +48,7 @@
     <link href="https://music.xiaomo.kim/2019/11/23/001000209/"/>
     <id>https://music.xiaomo.kim/2019/11/23/001000209/</id>
     <published>2019-11-23T02:43:04.169Z</published>
-    <updated>2019-11-23T02:43:04.169Z</updated>
+    <updated>2019-11-26T12:42:58.369Z</updated>
     
     <summary type="html">
     
@@ -56,8 +56,10 @@
       
         
         
-          &lt;h4 id=&quot;下载链接&quot;&gt;&lt;a href=&quot;#下载链接&quot; class=&quot;headerlink&quot; title=&quot;下载链接&quot;&gt;&lt;/a&gt;下载链接&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;/libs/aplayer/APlayer.min.css&quot;&gt;
+&lt;div class=&quot;music-player&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;l8 m10
         
       
     

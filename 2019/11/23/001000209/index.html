@@ -5,12 +5,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="胡66-空空如也-mp3音乐歌词下载, 乐音乐">
-    <meta name="description" content="下载链接
+    <meta name="description" content="
+
+    
+        
+            
+        
+    
+
+
+
+
+下载链接
 普通下载
 
 
 歌词
-空空如也 - 胡66词：雪无影曲：雪无影熟悉的陌生的这种感觉重复的曾经的那些情节也只是怀念一滴滴一点点一页一篇分手了也不过三百多天可我却害怕遇见我懵懵懂懂过了一年这一年似乎没有改变守着你离开后的世界空空如也白天">
+空空如也 - 胡66词：雪无影曲：雪无影熟悉的陌生的这种感觉重复的曾经的那些情节也只是怀念一滴滴一点点一页一篇分手了">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -48,9 +59,9 @@
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
-<body>
+    <body>
 
-    <header class="navbar-fixed">
+        <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper head-container">
             <div class="brand-logo">
@@ -191,7 +202,7 @@
     </nav>
 
 </header>
-    
+            
 
 
 
@@ -384,7 +395,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
+                <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    <div class="row">
+        <div class="l8 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+
+
+<h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
 <p><a href="https://545c.com/file/1606198-408863708" style="color: rgb(255, 255, 255);text-decoration:none;" target="_blank" class="download_url">普通下载</a></p>
 </blockquote>
 <hr>
@@ -408,6 +430,30 @@
    text-align: center;
 }
 </style>
+
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: false,
+        autoplay: true,
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: 0.5,
+        listFolded: true,
+        listMaxHeight: 90,
+        audio:  [
+                       {
+                           name: '空空如也',
+                           artist: '胡66',
+                           url: 'http://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_37540679&response=res&type=convert_url&',
+                       }
+                   ]
+    });
+});
+</script>
             </div>
             <hr/>
 
@@ -798,7 +844,7 @@
 </main>
 
 
-    <footer class="page-footer bg-color">
+                <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
            
@@ -847,7 +893,7 @@
 <div class="progress-bar"></div>
 
 
-    <!-- 搜索遮罩框 -->
+                    <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
@@ -865,7 +911,7 @@ $(function () {
     searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
 });
 </script>
-    <!-- 回到顶部按钮 -->
+                        <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
         <i class="fa fa-angle-up"></i>
@@ -873,44 +919,52 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+                            <script src="/libs/materialize/materialize.min.js"></script>
+                            <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+                            <script src="/libs/aos/aos.js"></script>
+                            <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+                            <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+                            <script src="/js/matery.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+                            <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    
-    <script src="/libs/others/clicklove.js"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
+                                
+                                    <script src="/libs/others/clicklove.js"></script>
+                                    
+                                        
+                                            <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+                                            
 
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: "a7b6af6b"
-        });
-        daovoice('update');
-    </script>
-    
+                                                
+                                                    <script>
+                                                        (function(i, s, o, g, r, a, m) {
+                                                            i["DaoVoiceObject"] = r;
+                                                            i[r] = i[r] || function() {
+                                                                (i[r].q = i[r].q || []).push(arguments)
+                                                            }, i[r].l = 1 * new Date();
+                                                            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+                                                            a.async = 1;
+                                                            a.src = g;
+                                                            a.charset = "utf-8";
+                                                            m.parentNode.insertBefore(a, m)
+                                                        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+                                                            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+                                                        daovoice('init', {
+                                                            app_id: "a7b6af6b"
+                                                        });
+                                                        daovoice('update');
+                                                    </script>
+                                                    
 
-</body>
+                                                        
+                                                            <script type="text/javascript" color="0,0,255" pointColor="0,0,255" opacity='0.7' zIndex="-1" count="99" src="/libs/background/canvas-nest.js"></script>
+                                                            
+
+                                                                
+                                                                    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+                                                                    
+
+    </body>
 
 </html>
