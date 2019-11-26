@@ -5,12 +5,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="梁博-表态(Live)-mp3音乐歌词下载, 乐音乐">
-    <meta name="description" content="下载链接
+    <meta name="description" content="
+
+    
+        
+            
+        
+    
+
+
+
+
+下载链接
 普通下载
 
 
 歌词
-表态 - 梁博作词：梁博作曲：梁博编曲：梁博钢琴：梁博音乐总监：谭伊哲@TYZ混音：林梦洋鼓手：祁大为贝斯：杜大鹏键盘：张效衡吉他：Misha Kalinin和声：秋子&amp;李郡洲乐器技师：于磊调音：杨光你总是静静">
+表态 - 梁博作词：梁博作曲：梁博编曲：梁博钢琴：梁博音乐总监：谭伊哲@TYZ混音：林梦洋鼓手：祁大为贝斯：杜大鹏键">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -384,7 +395,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
+                <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    <div class="row">
+        <div class="l8 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+
+
+<h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
 <p><a href="https://545c.com/file/1606198-406992046" style="color: rgb(255, 255, 255);text-decoration:none;" target="_blank" class="download_url">普通下载</a></p>
 </blockquote>
 <hr>
@@ -408,7 +430,27 @@
    text-align: center;
 }
 </style>
-<script>window.open('https://545c.com/file/1606198-406992046')</script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: false,
+        autoplay: true,
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: 0.3,
+        listFolded: true,
+        listMaxHeight: 90,
+        audio:  [{
+                   name: '表态(Live)',
+                   artist: '梁博',
+                   url: 'https://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_67375670&response=res&type=convert_url&'
+                    }]
+    });
+});
+</script>
             </div>
             <hr/>
 

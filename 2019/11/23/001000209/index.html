@@ -430,7 +430,6 @@
    text-align: center;
 }
 </style>
-
 <script>
 $(function () {
     new APlayer({
@@ -441,16 +440,14 @@ $(function () {
         loop: 'all',
         order: 'list',
         preload: 'auto',
-        volume: 0.5,
+        volume: 0.3,
         listFolded: true,
         listMaxHeight: 90,
-        audio:  [
-                       {
-                           name: '空空如也',
-                           artist: '胡66',
-                           url: 'http://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_37540679&response=res&type=convert_url&',
-                       }
-                   ]
+        audio:  [{
+                   name: '空空如也',
+                   artist: '胡66',
+                   url: 'https://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_37540679&response=res&type=convert_url&'
+                    }]
     });
 });
 </script>

@@ -5,12 +5,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="周杰伦-稻香-mp3音乐歌词下载, 乐音乐">
-    <meta name="description" content="下载链接
+    <meta name="description" content="
+
+    
+        
+            
+        
+    
+
+
+
+
+下载链接
 普通下载
 
 
 歌词
-稻香 - 周杰伦词：周杰伦曲：周杰伦对这个世界如果你有太多的抱怨跌倒了就不敢继续往前走为什么人要这么的脆弱堕落请你打开电视看看多少人为生命在努力勇敢的走下去我们是不是该知足珍惜一切就算没有拥有还记得你说家是唯一">
+稻香 - 周杰伦词：周杰伦曲：周杰伦对这个世界如果你有太多的抱怨跌倒了就不敢继续往前走为什么人要这么的脆弱堕落请你打">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -384,7 +395,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
+                <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    <div class="row">
+        <div class="l8 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+
+
+<h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
 <p><a href="https://545c.com/file/1606198-407008772" style="color: rgb(255, 255, 255);text-decoration:none;" target="_blank" class="download_url">普通下载</a></p>
 </blockquote>
 <hr>
@@ -408,7 +430,27 @@
    text-align: center;
 }
 </style>
-<script>window.open('https://545c.com/file/1606198-407008772')</script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: false,
+        autoplay: true,
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: 0.3,
+        listFolded: true,
+        listMaxHeight: 90,
+        audio:  [{
+                   name: '稻香',
+                   artist: '周杰伦',
+                   url: 'https://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_440613&response=res&type=convert_url&'
+                    }]
+    });
+});
+</script>
             </div>
             <hr/>
 

@@ -5,12 +5,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="海鸣威-老人与海-mp3音乐歌词下载, 乐音乐">
-    <meta name="description" content="下载链接
+    <meta name="description" content="
+
+    
+        
+            
+        
+    
+
+
+
+
+下载链接
 普通下载
 
 
 歌词
-老人与海 - 海鸣威词：朱其民曲：海鸣威秋天的夜凋零在漫天落叶里面泛黄世界一点一点随风而渐远冬天的雪白色了你我的情人节消失不见 爱的碎片翻开尘封的相片想起和你看过的那些老旧默片老人与海的情节画面中你却依稀 在浮">
+老人与海 - 海鸣威词：朱其民曲：海鸣威秋天的夜凋零在漫天落叶里面泛黄世界一点一点随风而渐远冬天的雪白色了你我的情人">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -384,7 +395,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
+                <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    <div class="row">
+        <div class="l8 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+
+
+<h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
 <p><a href="https://545c.com/file/1606198-404783652" style="color: rgb(255, 255, 255);text-decoration:none;" target="_blank" class="download_url">普通下载</a></p>
 </blockquote>
 <hr>
@@ -408,7 +430,27 @@
    text-align: center;
 }
 </style>
-<script>window.open('https://545c.com/file/1606198-404783652')</script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: false,
+        autoplay: true,
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: 0.3,
+        listFolded: true,
+        listMaxHeight: 90,
+        audio:  [{
+                   name: '老人与海',
+                   artist: '海鸣威',
+                   url: 'https://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_326667&response=res&type=convert_url&'
+                    }]
+    });
+});
+</script>
             </div>
             <hr/>
 

@@ -5,12 +5,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="刀郎-手心里的温柔-mp3音乐歌词下载, 乐音乐">
-    <meta name="description" content="下载链接
+    <meta name="description" content="
+
+    
+        
+            
+        
+    
+
+
+
+
+下载链接
 普通下载
 
 
 歌词
-手心里的温柔 - 刀郎词：刀郎曲：刀郎你在我身边相对无言默默的许愿对爱的依恋牧场的炊烟装点着草原爱相拥着牧归的少年你在我身边把我的手牵牵着我手心不变的誓言高高的雪山祝福我们爱在这一刻永恒永远爱到什么时候要爱到天">
+手心里的温柔 - 刀郎词：刀郎曲：刀郎你在我身边相对无言默默的许愿对爱的依恋牧场的炊烟装点着草原爱相拥着牧归的少年你">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -384,7 +395,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
+                <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    <div class="row">
+        <div class="l8 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+
+
+<h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
 <p><a href="https://545c.com/file/1606198-403403057" style="color: rgb(255, 255, 255);text-decoration:none;" target="_blank" class="download_url">普通下载</a></p>
 </blockquote>
 <hr>
@@ -408,7 +430,27 @@
    text-align: center;
 }
 </style>
-<script>window.open('https://545c.com/file/1606198-403403057')</script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: false,
+        autoplay: true,
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: 0.3,
+        listFolded: true,
+        listMaxHeight: 90,
+        audio:  [{
+                   name: '手心里的温柔',
+                   artist: '刀郎',
+                   url: 'https://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_203174&response=res&type=convert_url&'
+                    }]
+    });
+});
+</script>
             </div>
             <hr/>
 

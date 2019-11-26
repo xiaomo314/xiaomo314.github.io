@@ -5,12 +5,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="冷漠&amp;杨小曼-心锁-mp3音乐歌词下载, 乐音乐">
-    <meta name="description" content="下载链接
+    <meta name="description" content="
+
+    
+        
+            
+        
+    
+
+
+
+
+下载链接
 普通下载
 
 
 歌词
-心锁-冷漠&amp;杨小曼词：晨曦曲：崔伟立爱情是把无情的锁紧紧系住你和我我从来未曾离开过而你却变成了传说爱情故事分分合合幸福路上多坎坷思念如星光洒满银河我情愿困在回忆漩涡真心的对待过彼此珍惜过到最后分手变成结果牵挂如">
+心锁-冷漠&amp;杨小曼词：晨曦曲：崔伟立爱情是把无情的锁紧紧系住你和我我从来未曾离开过而你却变成了传说爱情故事分分合合幸">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -384,7 +395,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
+                <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    <div class="row">
+        <div class="l8 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+
+
+<h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><blockquote>
 <p><a href="https://545c.com/file/1606198-404801312" style="color: rgb(255, 255, 255);text-decoration:none;" target="_blank" class="download_url">普通下载</a></p>
 </blockquote>
 <hr>
@@ -408,7 +430,27 @@
    text-align: center;
 }
 </style>
-<script>window.open('https://545c.com/file/1606198-404801312')</script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: false,
+        autoplay: true,
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: 0.3,
+        listFolded: true,
+        listMaxHeight: 90,
+        audio:  [{
+                   name: '心锁',
+                   artist: '冷漠&杨小曼',
+                   url: 'https://antiserver.kuwo.cn/anti.s?useless=&format=mp3&rid=MUSIC_6606144&response=res&type=convert_url&'
+                    }]
+    });
+});
+</script>
             </div>
             <hr/>
 
