@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://music.xiaomo.kim/"/>
-  <updated>2019-12-02T11:25:27.482Z</updated>
+  <updated>2019-12-02T12:46:48.456Z</updated>
   <id>https://music.xiaomo.kim/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>郑源-我不后悔-mp3音乐歌词下载</title>
+    <link href="https://music.xiaomo.kim/2019/12/02/001000265/"/>
+    <id>https://music.xiaomo.kim/2019/12/02/001000265/</id>
+    <published>2019-12-02T12:46:48.456Z</published>
+    <updated>2019-12-02T12:46:48.456Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;/libs/aplayer/APlayer.min.css&quot;&gt;
+&lt;div class=&quot;music-player&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;l8 m10
+        
+      
+    
+    </summary>
+    
+      <category term="音乐" scheme="https://music.xiaomo.kim/categories/%E9%9F%B3%E4%B9%90/"/>
+    
+    
+      <category term="郑源" scheme="https://music.xiaomo.kim/tags/%E9%83%91%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>孙露-离别的秋天-mp3音乐歌词下载</title>
@@ -564,35 +593,6 @@
     
     
       <category term="半阳" scheme="https://music.xiaomo.kim/tags/%E5%8D%8A%E9%98%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大壮-我们不一样-mp3音乐歌词下载</title>
-    <link href="https://music.xiaomo.kim/2019/11/27/001000221/"/>
-    <id>https://music.xiaomo.kim/2019/11/27/001000221/</id>
-    <published>2019-11-27T08:32:36.202Z</published>
-    <updated>2019-11-27T09:33:06.810Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; href=&quot;/libs/aplayer/APlayer.min.css&quot;&gt;
-&lt;div class=&quot;music-player&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;l8 m10
-        
-      
-    
-    </summary>
-    
-      <category term="音乐" scheme="https://music.xiaomo.kim/categories/%E9%9F%B3%E4%B9%90/"/>
-    
-    
-      <category term="大壮" scheme="https://music.xiaomo.kim/tags/%E5%A4%A7%E5%A3%AE/"/>
     
   </entry>
   
