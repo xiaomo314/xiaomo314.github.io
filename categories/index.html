@@ -225,10 +225,131 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+    
+    #articleContent :focus {
+        outline: none;
+    }
+    
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+    
+    .toc-widget {
+        padding-left: 20px;
+    }
+    
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+    
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+    
+    #toc-content ol {
+        padding-left: 10px;
+    }
+    
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+    
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+    
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+    
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+    
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+    
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+    
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+    
+    .toc-title-1 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .toc-widget {
+        border-top: 1px solid rgb(144, 167, 137);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 0px;
+        --darkreader-inline-border-bottom: #323e44;
+    }
+    
+    #toc-aside {
+        padding-left: 30px;
+    }
+    
+    .ad-img {
+        width: 268px;
+        box-shadow: 0px 0px 15px #5d5d5d;
+        transition: all 0.5s;
+    }
+    
+    .ad-img:hover {
+        transform: scale(1.1);
+    }
+    
+    .img-div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -553,6 +674,82 @@
 
 
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down" style="display: none;">
+        <div class="toc-widget">
+            <div class="toc-title-1"><i class="far "></i>&nbsp;&nbsp; 猜你喜欢
+            </div>
+            <div id="toc-content" class="love" style="padding-left: 10%;">
+                <ul class="toc-list">
+                </ul>
+            </div>
+        </div>
+
+        <div class="toc-widget">
+            <div class="toc-title-1"><i class="far "></i>&nbsp;&nbsp; 每日推荐
+            </div>
+            <div id="toc-content" class="activity" style="padding-left: 10%;">
+                <ul class="toc-list toc-gd">
+                </ul>
+            </div>
+        </div>
+
+        <div class="toc-widget">
+            <div class="toc-title-1"><i class="far "></i>&nbsp;&nbsp; 关注我们
+            </div>
+            <div id="toc-content" class="Img">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        var k = "16BD4337FB1D355902E0502AFCBFD4DF"
+        var sort = "order=%5B%22sort+ASC%22%5D&"
+
+        $.ajax({
+            url: 'http://api.okayapi.com/?s=App.Table.FreeQuery&model_name=ad&logic=and&where=%5B%5B%22id%22%2C+%22%3E%3D%22%2C+%221%22%5D%5D&' + sort + 'page=1&perpage=6&is_real_total=1&app_key=' + k,
+        }).done(function(rs) {
+            var list = rs.data.list
+            for (var i = 0; i < list.length; i++) {
+                var html = '<li class="toc-list-item" style="list-style: disc;"><a href="' + list[i].url + '" class="toc-link node-name--H4 " target="_blank" >' + list[i].title + '</a></li>'
+                $('.love .toc-list').append(html);
+            }
+            $('#toc-aside').attr('style', '')
+        });
+
+
+        $.ajax({
+            url: 'http://api.okayapi.com/?service=App.Table.FreeQuery&model_name=day&logic=and&where=%5B%5B%22id%22%2C%22%3E%22%2C0%5D%5D&order=%5B%22RAND%22%5D&page=1&perpage=100&app_key=' + k,
+        }).done(function(rs) {
+            var list = rs.data.list
+            for (var i = 0; i < list.length; i++) {
+                $('.activity .toc-list').append('<li class="toc-list-item" style="list-style: disc;"><a href="' + list[i].url + '" class="toc-link node-name--H4 " target="_blank" >' + list[i].title + '</a></li>');
+            }
+            $('#toc-aside').attr('style', '')
+        });
+
+        $.ajax({
+            url: 'http://api.okayapi.com/?s=App.Table.FreeQuery&model_name=adimg&logic=and&where=%5B%5B%22id%22%2C+%22%3E%3D%22%2C+%221%22%5D%5D&' + sort + 'page=1&perpage=5&is_real_total=1&app_key=' + k,
+        }).done(function(rs) {
+            var list = rs.data.list
+            for (var i = 0; i < list.length; i++) {
+                var href = list[i].href
+                if (href) {
+                    $('.Img').append(' <div class="img-div"><a href="' + href + '" target="_blank"><img class="ad-img" src="' + list[i].url + '" alt="' + list[i].alt + '"></a></div>');
+                } else {
+                    $('.Img').append(' <div class="img-div"><img class="ad-img" src="' + list[i].url + '" alt="' + list[i].alt + '"></div>');
+                }
+
+            }
+        });
+    });
+</script>
     
 
 </main>
