@@ -712,13 +712,9 @@
         var k = "16BD4337FB1D355902E0502AFCBFD4DF"
         var sort = "order=%5B%22sort+ASC%22%5D&"
         var http = "http"
-        href = window.parent.location.href
-        if (href.indexOf("https:") != -1) {
-            http = "https"
-        }
 
         var headers = {
-            "Origin": "https://music.xiaomo.kim",
+            "Origin": "http://music.xiaomo.kim",
             "Referer": href.replace("https", "http")
         }
 
