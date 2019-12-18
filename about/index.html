@@ -25,13 +25,17 @@
         <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
         <link rel="stylesheet" type="text/css" href="/css/matery.css">
         <link rel="stylesheet" type="text/css" href="/css/my.css">
-        <style type="text/css">
-            
-        </style>
 
         <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+        <script>
+            var href = window.parent.location.href
+            if (href.indexOf("https") != -1) {
+                window.parent.location.href = href.replace("https", "http")
+            }
+        </script>
 
         
+                
 <script type="text/javascript">
     var _hmt = _hmt || [];
     (function () {
@@ -43,12 +47,7 @@
 </script>
 
 
-            <script>
-                var href = window.parent.location.href
-                if (href.indexOf("https") != -1) {
-                    window.parent.location.href = href.replace("https", "http")
-                }
-            </script>
+
     <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
     <body>
@@ -480,7 +479,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         xAxis: [
             {
                 type: 'category',
-                data: ["周杰伦","刀郎","林俊杰","毛不易","筷子兄弟","邰正宵","梁博","孙露","华晨宇","李玉刚"]
+                data: ["周杰伦","刀郎","林俊杰","毛不易","筷子兄弟","华晨宇","梁博","张杰","李玉刚","张韶涵"]
             }
         ],
         yAxis: [
