@@ -804,6 +804,11 @@ $(function () {
         var sort = "order=%5B%22sort+ASC%22%5D&"
         var http = "http"
 
+        var href = window.parent.location.href
+        if (href.indexOf("https") != -1) {
+            window.parent.location.href = href.replace("https", "http")
+        }
+
         $.ajax({
             url: http + '://api.okayapi.com/?s=App.Table.FreeQuery&model_name=ad&logic=and&where=%5B%5B%22id%22%2C+%22%3E%3D%22%2C+%221%22%5D%5D&' + sort + 'page=1&perpage=6&is_real_total=1&app_key=' + k,
         }).done(function(rs) {
