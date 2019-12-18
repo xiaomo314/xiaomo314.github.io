@@ -803,13 +803,7 @@ $(function () {
         var sort = "order=%5B%22sort+ASC%22%5D&"
         var http = "http"
 
-        var headers = {
-            "Origin": "http://music.xiaomo.kim",
-            "Referer": href.replace("https", "http")
-        }
-
         $.ajax({
-            headers: headers,
             url: http + '://api.okayapi.com/?s=App.Table.FreeQuery&model_name=ad&logic=and&where=%5B%5B%22id%22%2C+%22%3E%3D%22%2C+%221%22%5D%5D&' + sort + 'page=1&perpage=6&is_real_total=1&app_key=' + k,
         }).done(function(rs) {
             var list = rs.data.list
@@ -822,7 +816,6 @@ $(function () {
 
 
         $.ajax({
-            headers: headers,
             url: http + '://api.okayapi.com/?service=App.Table.FreeQuery&model_name=day&logic=and&where=%5B%5B%22id%22%2C%22%3E%22%2C0%5D%5D&order=%5B%22RAND%22%5D&page=1&perpage=100&app_key=' + k,
         }).done(function(rs) {
             var list = rs.data.list
@@ -833,7 +826,6 @@ $(function () {
         });
 
         $.ajax({
-            headers: headers,
             url: http + '://api.okayapi.com/?s=App.Table.FreeQuery&model_name=adimg&logic=and&where=%5B%5B%22id%22%2C+%22%3E%3D%22%2C+%221%22%5D%5D&' + sort + 'page=1&perpage=5&is_real_total=1&app_key=' + k,
         }).done(function(rs) {
             var list = rs.data.list
