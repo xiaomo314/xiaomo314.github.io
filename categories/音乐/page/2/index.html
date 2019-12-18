@@ -42,6 +42,13 @@
     })();
 </script>
 
+
+            <script>
+                var href = window.parent.location.href
+                if (href.indexOf("https") != -1) {
+                    window.parent.location.href = href.replace("https", "http")
+                }
+            </script>
     <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
     <body>
